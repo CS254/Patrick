@@ -14,10 +14,19 @@
 
 import webapp2
 
+<<<<<<< HEAD
+=======
+class WeatherPage(webapp2.RequestHandler):
+	def get(self):
+		self.response.headers['Content-Type'] = 'text/html'
+		s = open('empty-profile-form.html', 'r')
+       	 	self.response.write(s.read())
+>>>>>>> 557514507f3620193f5383c100c2e2ca0565dbf1
 
 class MainPage(webapp2.RequestHandler):
     def get(self):
         self.response.headers['Content-Type'] = 'text/plain'
+<<<<<<< HEAD
         self.response.write('Hello World')
 
 class CustomPage(webapp2.RequestHandler):
@@ -56,4 +65,11 @@ app = webapp2.WSGIApplication([
     ('/dog', DogPage),
     ('/dog/(\d+)', ManyDogPage),
     ('/weather', weather),
+=======
+        self.response.write('Hello, World!')
+
+app = webapp2.WSGIApplication([
+    ('/', MainPage),
+	('/weather',WeatherPage)
+>>>>>>> 557514507f3620193f5383c100c2e2ca0565dbf1
 ], debug=True)

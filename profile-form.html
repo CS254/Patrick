@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="description" content="CS 254 Web UI">
+    <meta name="author" content="CS 254 Students">
+
+    <title>Weather Warning</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.5/custom/bootstrap.min.css" rel="stylesheet">
+
+    <link type="text/css" property='stylesheet' href="css/bootstrap-timepicker.min.css" />
+
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-timepicker/0.5.2/js/bootstrap-timepicker.min.js"></script>
+
+    <!-- Custom Fonts -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+</head>
+
+<body class="col-xs-offset-1" style="max-width:1000px;">
+<h1> WEATHER  ALERT SUBMISSION FORM</h1>
+<form method = "post">
+	<b>Full Name: </b>
+	<input type = "text" name = "name"><br>
+	
+	<b>Email Address: </b>
+	<input type = "text" name = "email"><br>
+	
+	<b>Temperature in Fahrenheit: </b>
+	<input type = "text" name = "temperature"><br>
+	
+	<b>City: </b>
+	<input type = "text" name = "city"><br>
+	
+	<b>State/Province: </b>
+	<input type = "text" name = "state"><br>
+	
+	<b>Country: </b>
+	<input type = "text" name = "country"><br>
+	
+	<b>Alert Time: </b>
+	<input type = "text" name = "time"><br>
+	
+	<b>Time Zone:</b>
+	<select name = "time zone">
+		<option value = -12>UTC-12:00</option>
+		<option value = -11>UTC-11:00</option>
+		<option value = -10>UTC-10:00</option>
+		<option value = -9>UTC-09:00</option>
+		<option value = -8>UTC-08:00</option>
+		<option value = -7>UTC-07:00</option>
+		<option value = -6>UTC-06:00</option>
+		<option value = -5>UTC-05:00</option>
+		<option value = -4>UTC-04:00</option>
+		<option value = -3>UTC-03:00</option>
+		<option value = -2>UTC-02:00</option>
+		<option value = -1>UTC-01:00</option>
+		<option value = "0" selected>UTC+00:00</option>
+		<option value = 1>UTC+01:00</option>
+		<option value = 2>UTC+02:00</option>
+		<option value = 3>UTC+03:00</option>
+		<option value = 4>UTC+04:00</option>
+		<option value = 5>UTC+05:00</option>
+		<option value = 6>UTC+06:00</option>
+		<option value = 7>UTC+07:00</option>
+		<option value = 8>UTC+08:00</option>
+		<option value = 9>UTC+09:00</option>
+		<option value = 10>UTC+10:00</option>
+		<option value = 11>UTC+11:00</option>
+		<option value = 12>UTC+12:00</option>
+		<option value = 13>UTC+13:00</option>
+		<option value = 14>UTC+14:00</option>
+	</select><br>
+	<a href=https://www.timeanddate.com/time/map/>Use this map to find your UTC time zone</a><br>
+	
+	<input type = "submit" value  = "Submit">
+</form>
+</body>
+</html>
