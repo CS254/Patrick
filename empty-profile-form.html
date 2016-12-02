@@ -1,0 +1,65 @@
+#git test
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="description" content="CS 254 Web UI">
+    <meta name="author" content="CS 254 Students">
+
+    <title>Weather Warning</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.5/custom/bootstrap.min.css" rel="stylesheet">
+
+    <link type="text/css" property='stylesheet' href="css/bootstrap-timepicker.min.css" />
+
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-timepicker/0.5.2/js/bootstrap-timepicker.min.js"></script>
+
+    <!-- Custom Fonts -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+</head>
+
+
+
+<body class="col-xs-offset-1" style="max-width:1000px;">
+<h1>{% name %} Profile</h1>
+<p>update notification</p>
+<form action="demo_form.asp">
+<b>First name:</b> <input type="text" name="" value=""><br>
+<b>Last name:</b> <input type="text" name="" value=""><br>
+<b>City:</b> <input type="text" name="" value=""><br>
+<b>State:</b> <input type="text" name="" value=""><br>
+<p></p><br><b>Time to be alerted</b><select name="TimeAlert" form="form">
+  <option value="volvo">1</option>
+  <option value="saab">2</option>
+  <option value="opel">3</option>
+  <option value="audi">4</option>
+  <option value="volvo">5</option>
+  <option value="saab">6</option>
+  <option value="opel">7</option>
+  <option value="audi">8</option>
+  <option value="volvo">9</option>
+  <option value="saab">10</option>
+  <option value="opel">11</option>
+  <option value="audi">12</option>
+</select>
+<select name="Time to be alerted" form="carform">
+  <option value="volvo">AM</option>
+  <option value="saab">PM</option>
+</select></br>
+<b>Temperature to be alerted upon being less than :</b> <input type="number" name="" value=""><p> </p><br>
+<input type="submit" value="Submit">
+</form>
+
+
+</body>
+</html>
